@@ -32,15 +32,15 @@ Book::Book(const Book& b)
 
 ostream& Book::print(ostream& stream)  const 
 {
-    stream << "Àâòîð: " << Author << "\nÍàçâàíèå: " << Title << "\nÈçäàòåëüñòâî: "
-           << Publisher << "\nÒèï ïåðåïëåòà: " << BindingType << "\nÃîä: "
-           << Year << "\n×èñëî ñòðàíèö: " << NumPages << endl;
+    stream << "ÐÐ²Ñ‚Ð¾Ñ€: " << Author << "\nÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ: " << Title << "\nÐ˜Ð·Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾: "
+           << Publisher << "\nÐ¢Ð¸Ð¿ Ð¿ÐµÑ€ÐµÐ¿Ð»ÐµÑ‚Ð°: " << BindingType << "\nÐ“Ð¾Ð´: "
+           << Year << "\nÐ§Ð¸ÑÐ»Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†: " << NumPages << endl;
     return stream;
 }
 
 istream& Book::scan(istream& stream)
 {
-    cout << "Ââåäèòå ïîëÿ êíèãè ÷åðåç ïðîáåë:\n" << "Àâòîð, Íàçâàíèå, Èçäàòåëüñòâî, Òèï ïåðåïëåòà, Ãîä, ×èñëî ñòðàíèö  ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð¾Ð»Ñ ÐºÐ½Ð¸Ð³Ð¸ Ñ‡ÐµÑ€ÐµÐ· Ð¿Ñ€Ð¾Ð±ÐµÐ»:\n" << "ÐÐ²Ñ‚Ð¾Ñ€, ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ, Ð˜Ð·Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾, Ð¢Ð¸Ð¿ Ð¿ÐµÑ€ÐµÐ¿Ð»ÐµÑ‚Ð°, Ð“Ð¾Ð´, Ð§Ð¸ÑÐ»Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†  ";
     stream >> Author >> Title >> Publisher >> BindingType >> Year >> NumPages;
     cout << "\n";
     return stream;
