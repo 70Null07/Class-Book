@@ -12,17 +12,17 @@ private:
     int Year, NumPages;
 public:
 
-    // Конструкторы
-    // Конструктор по умолчанию
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
     Book();
 
-    // Конструктор с параметрами
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
     Book(string _Author, string _Title, string _Publisher, string _BindingType, int _Year, int _NumPages);
 
-    // Конструктор копирования
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
     Book(const Book& b);
 
-    // Методы ввода и вывода полей класса
+    // РњРµС‚РѕРґС‹ РІРІРѕРґР° Рё РІС‹РІРѕРґР° РїРѕР»РµР№ РєР»Р°СЃСЃР°
     ostream& print(ostream& stream) const;
     istream& scan(istream& stream);
 
@@ -40,14 +40,14 @@ public:
     void set_year(int _Year) { Year = _Year < 0 ? 0 : _Year; }
     void set_NumPages(int _NumPages) { NumPages = _NumPages < 0 ? 0 : _NumPages; }
 
-    // Сортировка объектов типа книга
+    // РЎРѕСЂС‚РёСЂРѕРІРєР° РѕР±СЉРµРєС‚РѕРІ С‚РёРїР° РєРЅРёРіР°
     static void sort(Book** obj, int COUNT_OBJ);
 
-    // Перегрузка операций сравнения
+    // РџРµСЂРµРіСЂСѓР·РєР° РѕРїРµСЂР°С†РёР№ СЃСЂР°РІРЅРµРЅРёСЏ
     bool operator >(const Book& obj) const;
     bool operator <(const Book& obj) const;
 
-    // Перегрузка операций ввода/вывода
+    // РџРµСЂРµРіСЂСѓР·РєР° РѕРїРµСЂР°С†РёР№ РІРІРѕРґР°/РІС‹РІРѕРґР°
     friend ostream& operator << (ostream& stream, const Book& obj);
     friend istream& operator >> (istream& stream, Book& obj);
 };
