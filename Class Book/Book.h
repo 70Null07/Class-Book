@@ -11,7 +11,6 @@ private:
     string Author, Title, Publisher, BindingType;
     int Year, NumPages;
 public:
-
     // Конструкторы
     // Конструктор по умолчанию
     Book();
