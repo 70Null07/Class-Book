@@ -7,7 +7,6 @@ void selection(Book** _objPtr, char _TypeSelection)
 {
     switch (_TypeSelection)
     {
-
     // Выборка по автору
     case 'a':
     {
@@ -170,7 +169,6 @@ int main()
         default:
             break;
         }
-
     } while (variant != 7);
 
     return 0;
